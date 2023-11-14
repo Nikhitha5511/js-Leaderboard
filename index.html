@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LeaderBoard</title>
+</head>
+<body>
+   <main>
+   <h1>LEADERBOARD</h1>
+   <form id="form-container" class="form-container">
+    <input type="text" placeholder="FirstName">
+    <input type="text" placeholder="LastName">
+    <input type="text" placeholder="Country">
+    <input type="number" placeholder="Player Score">
+    <input id="submitButton" class="submitButton" type="submit" value="Add Player">
+   </form>
+   <p class="error-msg">All fields are required</p>
+   <div class="cards-container" id="cards-container">
+    <div class="card">
+    <div>
+        <p>Nikhitha Thoram</p>
+        <p>NOV 2023: 15:34:49</p>
+    </div>
+    <div class="country">India</div>
+    <div class="score">95</div>
+    <div class="container-button">
+    <button onclick="onbuttonClick(event)">🗑</button>
+    <button onclick="onbuttonClick(event)">+5</button>
+    <button onclick="onbuttonClick(event)">-5</button>
+    </div>
+    </div>
+   </div>
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>
